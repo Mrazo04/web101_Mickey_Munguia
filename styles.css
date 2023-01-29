@@ -1,4 +1,48 @@
 body{
-    background-color: darkslategray;
+    background-color: white;
     
+}
+
+.header{
+    border: 5px solid ;
+    display: flex;
+}
+
+nav{
+    padding-left: 3%;
+}
+
+.name{
+    padding-left: 27%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+.about-me{
+    border: 5px solid;
+    padding: 20pt;
+    margin: 20%;
+    height: 200pt;
+    width: 380pt;
+}
+
+.name-alignment{
+    display: flex;
+    align-items: flex-end;
+}
+
+h1{
+    font-size: 30px;
+    padding-top: 35pt;
+}
+
+h2{
+    padding-top: 10pt;
+    padding-left: 10pt;
+}
+
+p{
+    padding-top: 20pt;
 }
