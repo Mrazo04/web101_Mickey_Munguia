@@ -1,0 +1,148 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    height: 100vh;
+    border: 2pt solid rebeccapurple;
+}
+
+.name {
+    border: 1pt solid;
+    width: auto;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    padding-top: 20pt;
+
+}
+.first-name {
+    margin-right: 60pt;
+    margin-left: 0pt;
+    padding-right: 5pt;
+    padding-left: 10pt;
+    border-radius: 20px 20px 0px 0px;
+    height: 53pt;
+    width: 140pt;
+    border: 5pt solid pink;
+    background-color: pink;
+}
+
+.first-name h1{
+    margin-top: 5pt;
+    font-size: 50pt;
+    letter-spacing: 12px;
+}
+
+h1{
+    font-family: 'DM Serif Display', serif;
+}
+
+h3{
+    font-family: 'DM Serif Display', serif;
+    padding-top: 10pt;
+    padding-left: 24pt;
+    font-size: 15pt;
+}
+
+.last-name {
+    border: 5pt solid pink;
+    background-color: pink;
+    height: 70pt;
+    width: 220pt;
+    margin-left: 20pt;
+    padding-right: 5pt;
+    padding-left: 10pt;
+    border-radius: 0px 20px 20px 20px;
+
+}
+
+.last-name h1{
+    margin-top: 0pt;
+    font-size: 50pt;
+    letter-spacing: 7px;
+
+}
+
+.description {
+    border: 1pt solid;
+    display: flex; 
+    justify-content: center;
+}
+
+.about-me{
+    position: absolute;
+    margin-top: 10pt;
+    border: 3pt solid pink;
+    background-color: rgb(246, 241, 231);
+    height: 200pt;
+    width: 270pt;
+    border-radius: 40px;
+}
+
+.about-me h3{
+    margin-top: 2pt;
+    font-size: 15pt;
+    letter-spacing: 3px
+}
+
+.box{
+    position: relative;
+    z-index: -1;
+    width: 180px;
+    height: 140px;
+  margin-top: 20pt;
+  margin-left: 20pt;
+    border: 3px solid pink;
+    background-color: palevioletred;
+    border-radius: 40px;
+    height: 200pt;
+    width: 270pt;
+  }
+
+  .skill-and-contact{
+    border: 1pt solid;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-contact-box{
+    position: absolute;
+  }
+  .skill{
+    margin-top: 10pt;
+    border: 3px solid pink;
+    background-color: rgb(246, 241, 231);
+    border-bottom: none;
+    height: 200pt;
+    width: 270pt;
+    border-radius: 40px 40px 0px 0px;
+  }
+
+  .contact{
+    border: 3px solid pink;
+    background-color: rgb(246, 241, 231);
+    border-top: none;
+    height: 200pt;
+    width: 270pt; 
+    border-radius: 0px 0px 40px 40px;
+  }
+
+  .skill-and-contact div.box {
+    height: 400pt;
+    width: 270pt;
+  }
+
+  .skill-and-contact h3{
+    margin-top: 0pt;
+  }
+
+.grid-container div.description {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.grid-container div.skill-and-contact{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
