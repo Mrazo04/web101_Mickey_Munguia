@@ -143,6 +143,39 @@ h3{
     margin-top: 0pt;
   }
 
+  article{
+    border: 5pt solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    margin-left: 47pt;
+    border-radius: 100px;
+  }
+
+  .education-box{
+    margin-top: 10pt;
+    position: absolute;
+    border: 3px solid pink;
+    background-color: rgb(246, 241, 231);
+    height: 300pt;
+    width: 300pt; 
+    border-radius: 40px;  
+}
+
+.education h3{
+    padding-top: 10pt;
+}
+
+article div.box{
+    position: relative;
+    z-index: -1;
+    height: 300pt;
+    width: 300pt;
+}
+
 .grid-container div.description {
     grid-column: 1/2;
     grid-row: 2/3;
