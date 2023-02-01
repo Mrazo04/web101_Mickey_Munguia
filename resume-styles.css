@@ -1,8 +1,12 @@
+body{
+    height: 100vh;
+    background-color: rgb(246, 241, 231);
+
+}
 .grid-container{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto;
-    height: 100vh;
     border: 2pt solid rebeccapurple;
 }
 
@@ -129,6 +133,8 @@ h3{
   }
 
   .skill-and-contact div.box {
+    position: relative;
+    z-index: -1;
     height: 400pt;
     width: 270pt;
   }
