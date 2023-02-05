@@ -7,11 +7,9 @@ body{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto;
-    border: 2pt solid rebeccapurple;
 }
 
 .name {
-    border: 1pt solid;
     width: auto;
     display: flex; 
     flex-direction: column; 
@@ -69,9 +67,9 @@ h3{
 }
 
 .description {
-    border: 1pt solid;
     display: flex; 
     justify-content: center;
+    margin-bottom: 291pt ;
 }
 
 .about-me{
@@ -104,16 +102,17 @@ h3{
   }
 
   .skill-and-contact{
-    border: 1pt solid;
     display: flex; 
     flex-direction: column;
     align-items: center;
+    margin-top: -292pt
   }
 
   .skill-contact-box{
     position: absolute;
     margin-left: 60pt;
   }
+
   .skill{
     margin-top: 10pt;
     border: 3px solid pink;
@@ -150,7 +149,6 @@ h3{
   }
 
   article{
-    border: 5pt solid;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,6 +157,8 @@ h3{
   img {
     margin-left: 47pt;
     border-radius: 100px;
+    position: absolute;
+    top: -56px
   }
 
   .education-box{
@@ -173,7 +173,7 @@ h3{
 }
 
 .education h3{
-    padding-top: 10pt;
+    padding-top: 100pt;
 }
 
 article div.box{
@@ -189,7 +189,6 @@ article div.box{
 }
 
 .experience{
-    border: 5px solid;
     display: flex;
     justify-content: center;
 
