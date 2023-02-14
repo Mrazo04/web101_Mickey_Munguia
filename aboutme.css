@@ -1,32 +1,11 @@
 body{
     height: 100vh;
-    width: 100vw;
     background-color: #f0ede9;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: 55% 45%;
-    grid-template-rows: 10% 90%;
-}
-
-.grid-container header{
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
-
-.grid-container section.pictures {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-.grid-container section.about {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
+/* All header objects */
 header{
-    border: 5px solid;
+    border: 5px ;
     border-bottom-color: #FAFAF0;
     border-bottom-style: double;
     height: 100pt;
@@ -47,8 +26,19 @@ nav{
     margin-right: 50pt;
 }
 
+/* Grid-container sizes */
+.grid-container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height:  100vh;
+    width: 100vw ;
+}
+
+/* Objects inside the grid-container */
+
+/* Images sizes and position */
 .pictures{
-    border: 5px solid;
+    grid-column: 1/2;
     height: 200pt;
     margin-top: 150pt;
     margin-left: 20pt;
@@ -71,9 +61,10 @@ img{
     margin-left: 214pt;
 }
 
+/* About me box */
 .about{
+    grid-column: 2/3;
     margin-left: 50pt;
-    border: 5px solid #4E4F4A;
     height: 200pt;
     width: 510pt;
     margin-top: 150pt;
@@ -81,7 +72,7 @@ img{
 
 h1{ 
     margin-top: 20pt;
-    margin-left: 90pt;
+    margin-left: 100pt;
     color: #4E4F4A;
     font-family: 'Lora', serif;
     font-size: 25px;
@@ -93,4 +84,70 @@ p{
     color: #4E4F4A;
     font-family: 'Rajdhani', sans-serif;
     font-size: 20px;
+}
+
+/* Media query for mobiles */
+/* Everything is in the same order */
+@media (max-width: 576px) {
+    header{
+        height: 80pt;
+        width: 100vw;
+    }
+    
+    h3{
+        margin-left: 50pt;
+        font-size: 20px;
+    }
+    
+    nav{
+        margin-right: 20pt;
+        font-size: 15px;
+    }
+
+   .pictures{
+    margin-top: 20pt;
+    margin-left: 50pt;
+    height: 100vh;
+   }
+
+   img{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #FAFAF0;
+    height: 250px;
+    width: 200px;
+}
+#self-care{
+    position: static;
+    margin: 0%;
+}
+
+#family{
+    position: static;
+    margin: 0%;
+}
+
+.about{
+    grid-column: 2/3;
+    margin-top: 20pt;
+    margin-left: 0%;
+    height: 100vh;
+    width: 40vw;
+}
+
+h1{ 
+    margin: 0%;
+    color: #4E4F4A;
+    font-family: 'Lora', serif;
+    font-size: 25px;
+}
+
+p{
+    margin-top: 20pt;
+    margin-left: 0%;
+    color: #4E4F4A;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+}
+
 }
