@@ -47,6 +47,12 @@ input.text{
     height: 20pt;
 }
 
+#messageBox{ 
+    margin-left: 33pt;
+    width: 225pt;
+    height: 50pt;
+}
+
 
 .rightSide{
     display: flex;

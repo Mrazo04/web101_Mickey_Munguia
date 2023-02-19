@@ -8,6 +8,7 @@
     <link rel="html" href="index.html">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="contact.css">
+    <script src="./contact.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
@@ -25,16 +26,18 @@
                <a href="./aboutme.css">About Me</a>
        </nav>
     </header>
-    <form action="" class="gridContainer">
+    <form action="./results.html" method="get" class="gridContainer">
         <section class="leftSide">
             <div>
-                <input type="text" name="nameBox" placeholder="Enter your Name" class="text">
+                <label for="nameBox">Name</label>
+                <input type="text" name="nameBox" id="nameBox" placeholder="Enter your Name" class="text">
             </div>
             <div>
+                <label for="emailBox">Email</label>
                 <input type="text" name="emailBox" id="emailBox" placeholder="Enter a valid email address" class="text" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
             </div>
             <div>
-                <input type="text" name="messageBox" placeholder="Enter your message" minlength="20" maxlength="500" class="text">
+                <textarea name="messageBox" id="messageBox" minlength="20" maxlength="500" cols="30" rows="10" class="text" placeholder="Enter your message"></textarea>
             </div>
             <div id="contactSelection">
                 <label for="yesNoRadio"> Would you like to be contacted?</label>
@@ -65,7 +68,7 @@
             <label for="birthday">Birthday:</label>
                 <input type="date" id="birthday" name="birthday"></input>
             <div id="submit">
-                <button>Submit</button>
+                <button onclick="submitForm">Submit</button>
             </div>
           </section>
             <section class="bottomRow">
