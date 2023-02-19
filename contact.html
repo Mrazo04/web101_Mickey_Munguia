@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="html" href="index.html">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header> 
+        <h3>Myrka Razo</h3> 
+       <nav>
+               <a href="./index.html">Home</a>
+               <a href="./resume.html">Resume</a>
+               <a href="/myblog/">My Blog</a>
+               <a href="./aboutme.css">About Me</a>
+       </nav>
+    </header>
+    <form action="./results.html" method="post" enctype="multipart/form-data" class="gridContainer">
+        <section class="leftSide">
+            <div>
+                <input type="text" name="nameBox" placeholder="Enter your Name" class="text">
+            </div>
+            <div>
+                <input type="text" name="emailBox" id="emailBox" placeholder="Enter a valid email address" class="text" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            </div>
+            <div>
+                <input type="text" name="messageBox" placeholder="Enter your message" minlength="20" maxlength="500" class="text">
+            </div>
+            <div id="contactSelection">
+                <label for="yesNoRadio"> Would you like to be contacted?</label>
+                    <p id="yes">
+                        <input type="radio" name="yes_no" checked>Yes</input>
+                    </p>
+                    <p id="no">
+                        <input type="radio" name="yes_no">No</input>
+                    </p>
+            </div>
+            <div id="referralSelection">
+                How did you hear about me? <br>
+                <input type="checkbox" id="refferal1" name="refferal1" value="classmate">
+                <label for="refferal1"> Classmate</label><br>
+                <input type="checkbox" id="refferal2" name="refferal2" value="resumeSubmission">
+                <label for="refferal2"> Resume Submission</label><br>
+                <input type="checkbox" id="refferal3" name="refferal3" value="linkedIn">
+                <label for="refferal3"> LinkedIn</label><br>
+                <input type="checkbox" id="refferal4" name="refferal4" value="codingAcademyRec">
+                <label for="refferal3"> Coding Academy Rec</label>
+
+            </div>
+        </section>
+          <section class="rightSide">
+            <label for="birthday" id="birthdayQuestion"> When is your birthday? 
+                <p id="sendMessage"> Enter your date of birth to wish you a Happy Birthday!</p>
+            </label>
+            <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday"></input>
+            <div id="submit">
+                <input type="submit" value="Submit"></input>
+            </div>
+          </section>
+            <section class="bottomRow">
+                <h1>Get in Touch!</h1>
+            </section>
+    </form>
+    
+</body>
+</html>
