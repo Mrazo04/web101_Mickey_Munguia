@@ -1,8 +1,9 @@
 const placeForResults = document.getElementById("results")
 console.log ('placeForResults:', placeForResults)
 console.log ('window.location.search:', window.location.search)
+
 new URLSearchParams(window.location.search).forEach((value, name) => {
-    console.log('value, name:', {value, name})
+  console.log('value, name:', {value, name})
   placeForResults.append(`${name} : ${value}`)
   placeForResults.append(document.createElement("br"))
 })
