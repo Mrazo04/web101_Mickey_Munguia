@@ -13,6 +13,17 @@ header{
     border-bottom-color: #FAFAF0;
     height: 100pt;
     width: 100vw;
+    font-family: 'Lora', serif;
+}
+
+h3{
+    margin-left: 50pt;
+    color: #4E4F4A;
+    font-size: 30px;
+}
+
+nav{
+    margin-right: 50pt;
 }
 
 .gridContainer{
@@ -47,5 +58,13 @@ input.text{
 
 .bottomRow{
     width: 100vw;
-    background-color: #BF9B71;
+    background-color: #FAFAF0;
+}
+
+h1{
+    margin-top: 50pt;
+    margin-left: 50pt;
+    color: #4E4F4A;
+    font-size: 30px;
+    font-family: 'Lora', serif;
 }
